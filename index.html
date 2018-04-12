@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>JSON Token App</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="left">
+      <label for="tokenTextArea">Token:</label><br />
+      <textarea id="tokenTextArea" name="token"></textarea>
+    </div>
+    <div id="right">
+      <label for="tokenTranslatedTextArea">Token parsato:</label><br />
+      <textarea  readonly id="tokenTranslatedTextArea" name="traslated_token"></textarea>
+    </div>
+  </div>
+  
+  <input id="buttonConvertor" type="submit" value="Converti" onclick="analyze()" />
+
+
+  <script src="analyze.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "jwt-desktop-client",
+  "version": "1.0.0",
+  "description": "desktop app for jwt testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test-jwt",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [
+    "jwt",
+    "windows",
+    "linux",
+    "mac"
+  ],
+  "author": "Giovanni Filannino",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.1"
+  },
+  "dependencies": {
+    "angular2-jwt-simple": "^0.5.4",
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1",
+    "jsonwebtoken": "^8.2.1",
+    "popper.js": "^1.14.3"
+  },
+  "build": {
+    "appId": "gianni.filannino.jwt",
+    "mac": {
+      "category": "programming"
+    }
+  }
+}
